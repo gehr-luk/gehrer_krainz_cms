@@ -2,6 +2,73 @@
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 1740px)
+{
+    header {
+        nav {
+            padding-bottom: 10px;
+        }
+        #hero {
+            h2 {
+                font-size: 6vw !important;
+            }
+            a {
+                font-size: 5vw !important;
+            }
+        }
+    }
+    footer {
+        a, p {
+            display: block !important;
+        }
+        a:nth-child(2) {
+            margin-left: 0 !important;
+        }
+        a {
+
+        }
+        a:nth-child(2), a:nth-child(3){
+            display: inline-block !important;
+        }
+    }
+
+
+}
+@media screen and (max-width: 640px)
+{
+    header {
+        h1 {
+            a {
+                font-size: 20vw !important;
+                text-align: center !important;
+                display: block;
+                margin: 0 !important;
+            }
+        }
+        nav {
+            margin: 0 !important;
+        }
+    }
+
+    #hero {
+        height: 300px !important;
+        h2 , a {
+            display: block !important;
+            margin: auto !important;
+            text-align: center !important;
+            width: 90%;
+        }
+    }
+
+    footer {
+        p, a , h3, h2{
+            font-size: 4vw !important;
+        }
+        li {
+            font-size: 3vw !important;
+        }
+    }
+}
 html {
   // prevent text size adjust after orientation change, without disabling user zoom
   -ms-text-size-adjust: 100%;
@@ -188,14 +255,12 @@ body {
         p {
             padding-bottom: 50px;
             line-height: 1.6;
+            width: 50%;
         }
         h2::after {
             content: ":";
         }
-        p {
 
-            width: 50%;
-        }
         a , h2, h3{
             font-size: 40px;
             text-decoration: none;
